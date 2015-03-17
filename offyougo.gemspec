@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.authors = ["Remo Fritzsche"]
   s.date = "2015-03-17"
   s.executables = ["offyougo"]
-  s.files = [".gitignore", "LICENSE", "README.md", "Rakefile", "bin/offyougo"]
+  s.files = [".gitignore", "LICENSE", "README.md", "Rakefile", "VERSION", "lib/offyougo.rb", "lib/offyougo/app.rb", "lib/offyougo/cli.rb", "lib/offyougo/volume_watcher.rb", "offyougo.gemspec", "bin/offyougo"]
   s.require_paths = ["lib"]
   s.rubygems_version = "2.0.14"
   s.summary = "Simple command-line utility for offloading camera media using rsync."
