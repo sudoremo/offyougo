@@ -4,4 +4,4 @@ $LOAD_PATH.unshift File.dirname(__FILE__) + '/../lib'
 
 require 'offyougo'
 
-Offyougo::App.start(ARGV)
+Offyougo::App.new(ARGV)
