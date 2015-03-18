@@ -8,8 +8,6 @@ module Offyougo
     }
 
     def initialize(args)
-
-      @version = File.read('VERSION')
       @vv = VolumeWatcher::MacOSX.new(self)
 
       @source = nil
@@ -243,7 +241,7 @@ module Offyougo
     def render(&block)
       system "clear" or system "cls"
 
-      puts ("Off You Go                      Version " + IO.read('VERSION') + ', Copyright ©2015 by Remo Fritzsche').yellow
+      puts ("Off You Go                      Version " + Offyougo.version + ', Copyright ©2015 by Remo Fritzsche').yellow
       puts ("-"*80).yellow
       puts
 
